@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Glazen Fotogallerij</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Eerste glazerij aan belgische kust</h2>
+
+  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="foto/DSC_1772.jpeg" itemprop="contentUrl" data-size="1024x1024">
+          <img class="achter" src="foto/DSC_1772.jpeg" itemprop="thumbnail" alt="Image description" />
+      </a>
+                                          <figcaption class="beschrijving" itemprop="caption description">Verloren bloed</figcaption>
+                                          
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="foto/DSC_1789.jpeg" itemprop="contentUrl" data-size="964x1024">
+          <img class="achter" src="foto/DSC_1789.jpeg" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <figcaption class="beschrijving" itemprop="caption description">Spietsen bij zonsondergang</figcaption>
+    </figure>
+
+    <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="foto/DSC_1792.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img class="achter" src="foto/DSC_1792.jpeg" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <figcaption class="beschrijving" itemprop="caption description">Gebroken stralen</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="foto/DSC_1824.jpeg" itemprop="contentUrl" data-size="1024x768">
+          <img class="achter" src="foto/DSC_1824.jpeg" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <figcaption class="beschrijving" itemprop="caption description">Bloemboeket</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="foto/DSC_1853.jpeg" itemprop="contentUrl" data-size="1024x768">
+          <img class="achter" src="foto/DSC_1853.jpeg" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <figcaption class="beschrijving" itemprop="caption description">Opborrelen</figcaption>
+    </figure>
+
+    <figure class="drie" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="foto/DSC_1861.jpeg" itemprop="contentUrl" data-size="1024x768">
+          <img class="achter" src="foto/DSC_1861.jpeg" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <figcaption class="beschrijving" itemprop="caption description">Gesnoven glas</figcaption>
+    </figure>
+
+    <figure class="drie" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="foto/DSC_1890.jpeg" itemprop="contentUrl" data-size="1024x768">
+          <img class="achter" src="foto/DSC_1890.jpeg" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <figcaption class="beschrijving" itemprop="caption description">Zwembadden</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="foto/DSC_1899.jpeg" itemprop="contentUrl" data-size="1024x768">
+          <img class="achter" src="foto/DSC_1899.jpeg" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <figcaption class="beschrijving" itemprop="caption description">transparantie</figcaption>
+    </figure>
+
+    <figure class="drie" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="foto/DSC_1905.jpeg" itemprop="contentUrl" data-size="1024x768">
+          <img class="achter" src="foto/DSC_1905.jpeg" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <figcaption class="beschrijving" itemprop="caption description">Laatste stuk</figcaption>
+    </figure>
+
+    <figure class="drie" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="foto/DSC_1938.jpeg" itemprop="contentUrl" data-size="1024x768">
+          <img class="achter" src="foto/DSC_1938.jpeg" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <figcaption class="beschrijving" itemprop="caption description">Famillie</figcaption>
+    </figure>
+
+
+  </div>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
+    <script  src="index.js"></script>
+</body>
+</html>
